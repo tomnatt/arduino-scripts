@@ -17,6 +17,7 @@ int buttonState = 0;
 int cursorCol = 0;
 int cursorRow = 0;
 int score = 0;
+int cursorSpeed = 100; // lower is faster
 boolean movingRight = true;
 
 void setup() {
@@ -78,7 +79,7 @@ void loop() {
   }
 
   // wait for next cycle
-  delay(300);
+  delay(cursorSpeed);
 }
 
 // intro / reset sequence
